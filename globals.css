@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brown-50: #fdf8f6;
+  --brown-100: #f2e8e5;
+  --brown-200: #eaddd7;
+  --brown-300: #e0cec7;
+  --brown-400: #d2bab0;
+  --brown-500: #bfa094;
+  --brown-600: #a18072;
+  --brown-700: #977669;
+  --brown-800: #846358;
+  --brown-900: #43302b;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-brown-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brown-600 text-white py-2 px-4 rounded hover:bg-brown-700 transition duration-300;
+  }
+}
+
